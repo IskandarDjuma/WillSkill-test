@@ -1,0 +1,92 @@
+.employees {
+  border-top: 2px solid $basic-grey200;
+}
+
+.employees__wrapper {
+   h2 {
+    @include font-size (3em, 1em, 700);
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 44px;
+    padding-top: 85px;
+    width: 70%;
+  }
+
+  @include below ($desktop-width) {
+    h2 {
+      @include font-size (2.62em, 1em, 700);
+      padding-top: 120px;
+      width: 90%;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.employees__subtitle {
+  @include font-size (1.62em, 1em, 500);
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 83px;
+
+    @include below ($desktop-width) {
+      @include font-size (1.25em, 1em, 500);
+    }
+}
+
+.employees__buttons {
+  position: relative;
+  display: flex;
+}
+
+.employees__button {
+  position: absolute;
+  top: -410px;
+  width: 70px;
+  height: 70px;
+  transition: all ease 0.1s;
+  border: 2px solid $basic-grey;
+  border-radius: 300px;
+  background-color: transparent;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
+  padding: 0;
+  cursor: pointer;
+  z-index: 9999;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/icon/button-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--left {
+    left: -37px;
+  }
+
+  &--right {
+    right: -34px;
+  }
+
+  &--right::before {
+    transform-origin: 26% 26%;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    border: 3px solid $accent-color;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @include below ($desktop-width) {
+
+  }
+}
+

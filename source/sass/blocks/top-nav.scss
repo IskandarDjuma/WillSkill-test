@@ -1,0 +1,45 @@
+.top-nav {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  width: 19%;
+
+  @include below ($desktop-width) {
+    display: none;
+  }
+}
+
+.top-nav__item {
+  flex: 1 1 auto;
+}
+
+.top-nav__item--review {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icon/star-icon.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.top-nav__link {
+  @include font-size(0.87em, 1.2em, 500);
+    color: $primary-text-color;
+    border-bottom: 1px solid $basic-grey100;
+
+    &:hover {
+      border-bottom: 2px solid $accent-color;
+    }
+
+    &:focus {
+      color: initial;
+      opacity: 0.5;
+    }
+}

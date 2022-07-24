@@ -1,0 +1,128 @@
+.hero {
+  display: flex;
+  margin-bottom: 155px;
+
+  @include below ($desktop-width) {
+    margin-bottom: 160px;
+  }
+}
+
+.hero__wrapper {
+  min-width: 60%;
+
+  h2 {
+    @include font-size (5em, 1em, 800);
+    margin: 0;
+    padding-bottom: 60px;
+  }
+
+  @include below ($desktop-width) {
+    min-width: 65%;
+
+    h2 {
+      @include font-size (4.3em, 1em, 800);
+      width: 60%;
+    }
+  }
+}
+
+.hero__subtitle {
+  @include font-size (1.62em, 1.2em, 500);
+    margin: 0;
+    padding-bottom: 60px;
+    width: 70%;
+
+    @include below ($desktop-width) {
+      @include font-size (1.25em, 1em, 500);
+      width: 90%;
+      padding-bottom: 70px;
+  }
+}
+
+.hero__button {
+  @include font-size(1.12em, 1.5em, 700);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 412px;
+  color: $basic-white;
+  padding: 1.2em;
+  padding-left: 47px;
+  margin-bottom: 40px;
+  border-radius: 50px ;
+  background: linear-gradient(270deg, #FFCC00 0%, #FFA300 100%);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 23%;
+    top: -10px;
+    width: 0;
+    height: 0;
+    z-index: 10;
+    border: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-left: -10px;
+    border-bottom: 10px solid #FFA300;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14%;
+    width: 12px;
+    height: 18px;
+    background-image: url("../img/icon/arrow-right-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  @include below ($desktop-width) {
+    @include font-size(1em, 1.5em, 700);
+    padding: 1em;
+    width: 343px;
+    padding-left: 40px;
+
+    &::after {
+      left: 11%;
+    }
+
+    &::before {
+      left: 30%;
+    }
+  }
+}
+
+
+.hero__image {
+  position: relative;
+  min-width: 100vw;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: -190px;
+    right: auto;
+    bottom: auto;
+    width: auto;
+    height: 906px;
+    object-fit: contain;
+    z-index: -1;
+
+
+
+  }
+
+  @include below ($desktop-width) {
+
+    img {
+      height: 920px;
+    }
+  }
+}
+

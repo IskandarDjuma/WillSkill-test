@@ -1,0 +1,92 @@
+.service {
+  margin-bottom: 120px;
+}
+
+.service__wrapper {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  h2 {
+    @include font-size(3.75em, 1em, 800);
+    margin: 0;
+    padding-bottom: 60px;
+  }
+
+  p {
+    @include font-size(1.25em, 1.4em, 500);
+    margin: 0;
+  }
+
+  @include below ($desktop-width) {
+    gap: 20px;
+
+    h2 {
+      @include font-size(3.12em, 1em, 800);
+    }
+
+    p {
+      @include font-size(1.12em, 1.4em, 500);
+
+    }
+  }
+}
+
+.service__item {
+  flex-grow: 2;
+
+  &--info {
+    width: 49%;
+    flex: 0 1 auto;
+  }
+
+  &:nth-child(2) {
+    order: -1;
+  }
+
+  @include below ($desktop-width) {
+    flex: 0 1 auto;
+
+    img {
+      object-fit: cover;
+      width: 525px;
+      height: 537px;
+    }
+  }
+
+
+}
+
+.service__lead {
+  padding-bottom: 32px;
+}
+
+.service__text {
+  padding-bottom: 40px;
+}
+
+
+.service__button {
+  @include font-size(1.12em, 1.4em, 700);
+  position: relative;
+  display: inline-flex;
+  color: $basic-black;
+  padding: 1em 2em;
+  border: 2px solid $basic-black;
+  border-radius: 100px;
+  transition: all ease 0.1s;
+
+  &:hover {
+    border: 2px solid $accent-color;
+  }
+
+  &:focus {
+   opacity: 0.5;
+  }
+
+  @include below ($desktop-width) {
+    @include font-size(0.93em, 1.4em, 700);
+    padding: 1em 2.8em;
+  }
+}

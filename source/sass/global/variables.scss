@@ -1,0 +1,28 @@
+// Fonts
+$primary-text: "Montserrat", "Arial", sans-serif;
+$secondary-text:"Proxima Nova", "Arial", sans-serif;
+
+// Color
+$basic-yellow: #ffcc00;
+$basic-black: #000000;
+$basic-white: #ffffff;
+$basic-grey: #e5e5e5;
+$basic-grey100: #d9d9d9;
+$basic-grey200: #f6f6f6;
+$transparent: rgba($basic-black, 0);
+
+$accent-color: $basic-yellow;
+$primary-text-color: $basic-black;
+
+
+// Viewports
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width-sm: 1024px;
+$desktop-width: 1366px;
+$desktop-width-max: 1920px;
+
+//Retina
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

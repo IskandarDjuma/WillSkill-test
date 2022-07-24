@@ -1,0 +1,56 @@
+.stats {
+  position: absolute;
+  right: 7%;
+  bottom: -3%;
+  background-color: $basic-white;
+  border-radius: 6.25em;
+
+  @include below ($desktop-width) {
+    right: 3%;
+    bottom: 11%;
+  }
+}
+
+.stats__wrapper {
+  position: relative;
+  display: flex;
+  width: 464px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3em 2.5em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/hero/smile-icon@1x.png");
+
+    @include retina () {
+      background-image: url("../img/hero/smile-icon@2x.png");
+    }
+  }
+}
+
+.stats__title {
+  @include font-size(50px, 1.4em, 700);
+  font-family: $secondary-text;
+  width: min-content;
+  background: linear-gradient(270deg, #FFCC00 0%, #FFA300 100%),
+  linear-gradient(0deg, #FFA300, #FFA300),
+  linear-gradient(0deg, #4BB1BC, #4BB1BC),
+  linear-gradient(0deg, #1767F9, #1767F9), #4633B9;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.stats__description {
+  @include font-size(1.25em, 1.4em, 500);
+  margin: 0;
+  width: min-content;
+}

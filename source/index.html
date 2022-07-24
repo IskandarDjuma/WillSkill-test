@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
+  <title>Ремонт электронной техники Белый Сервис</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="container page-header__wrapper">
+      <div class="page-header__wrap">
+        <a class="page-header__logo logo">
+          <picture>
+            <source media="(max-width: 375px)" srcset="img/icon/logo-mobile.svg">
+            <img class="logo__image" src="img/icon/logo.svg" width="311" height="46" alt="Логотип компании">
+          </picture>
+        </a>
+        <ul class="page-header-top-nav top-nav">
+          <li class="top-nav__item">
+            <a class="top-nav__link" href="#">Контакты</a>
+          </li>
+          <li class="top-nav__item top-nav__item--review">
+            <a class="top-nav__link" href="#">Отзывы</a>
+          </li>
+          <li class="top-nav__item">
+            <a class="top-nav__link" href="#">Гарантия</a>
+          </li>
+        </ul>
+        <div class="page-header__phone phone">
+          <div class="phone__wrap">
+            <p class="phone__subtitle">Звоните, пн-вс 10:00 - 20:00</p>
+            <a class="phone__link" href="tel:+73512207704">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#phone-icon"></use>
+              </svg>+7 351 220 77 04</a>
+          </div>
+        </div>
+        <button class="page-header__toggle page-header__toggle--open page-header__toggle--nojs" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list ">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <span class="main-nav__icon">
+                <svg width="26" height="26">
+                  <use xlink:href="img/sprite.svg#catalog-icon"></use>
+                </svg>
+              </span>
+              Каталог
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--list">
+            <a class="main-nav__link" href="#">
+              <span class="main-nav__icon">
+                <svg width="26" height="26">
+                  <use xlink:href="img/sprite.svg#apple-icon"></use>
+                </svg>
+              </span>
+              Ремонт Apple
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--list">
+            <a class="main-nav__link" href="#">
+              <span class="main-nav__icon">
+                <svg width="26" height="26">
+                  <use xlink:href="img/sprite.svg#repair-icon"></use>
+                </svg>
+              </span>
+              Ремонт смартфонов
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--list">
+            <a class="main-nav__link" href="#">
+              <span class="main-nav__icon">
+                <svg width="26" height="26">
+                  <use xlink:href="img/sprite.svg#repair-tablet"></use>
+                </svg>
+              </span>
+              Ремонт планшетов
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--list">
+            <a class="main-nav__link" href="#">
+              <span class="main-nav__icon">
+                <svg width="26" height="26">
+                  <use xlink:href="img/sprite.svg#repair-laptop-icon"></use>
+                </svg>
+              </span>
+              Ремонт ноутбуков
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">
+      Белый сервис - обслуживаение и ремонд электронной техники
+    </h1>
+    <section class="hero container ">
+        <div class="hero__wrapper">
+          <h2 class="hero__headline">Сервисный центр</h2>
+          <p class="hero__subtitle">
+            Ремонт планшетов в&nbsp;Челябинске. Бесплатно продиагностируем и&nbsp;быстро починим любую поломку. Гарантия 3&nbsp;месяца
+          </p>
+          <a class="hero__button" href="#">Записаться на диагностику</a>
+          <ul class="hero__benefits benefits">
+            <li class="benefits__item benefits__item--repair">
+              <p class="benefits__title">
+                Починим даже то, от чего отказались другие
+              </p>
+            </li>
+            <li class="benefits__item benefits__item--guarantee">
+              <p class="benefits__title">Гарантия нашего сервиса&nbsp; 3 месяца</p>
+            </li>
+            <li class="benefits__item benefits__item--bonus">
+              <p class="benefits__title">Собственная выгодная бонусная система</p>
+            </li>
+            <li class="benefits__item benefits__item--diagnostics">
+              <p class="benefits__title">Бесплатная диагностика даже при отказе от ремонта</p>
+            </li>
+          </ul>
+
+          <!-- <article class="stats">
+            <div class="stats__wrapper">
+              <p class="stats__title"> 12&nbsp;585</p>
+              <p class="stats__description">Выполненных ремонтов</p>
+            </div>
+          </article> -->
+      </div>
+      <!-- <div class="hero__image">
+        <picture>
+          <!-- <source type="image/webp" media="(min-width: 1300px)"
+            srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x"> -->
+
+
+          <!-- <source media="(max-width: 375px)" srcset="img/hero/hero-bg-mobile@1x.jpg 1x, img/hero/hero-bg-mobile@2x.jpg 2x">
+          <img class="hero__img" src="img/hero/hero-bg@1x.png" srcset="img/img/hero/hero-bg@2x.png 2x" width="806" height="838"
+            alt="Ремонт устройств различной сложности, разбитые айфоны, компьютер и смарт часы">
+        </picture>
+      </div> -->
+    </section>
+    <section class="employees ">
+      <div class="employees__wrapper container swiper">
+        <h2>Ремонт осуществляется первоклассными специалистами</h2>
+        <p class="employees__subtitle"> Средний опыт работы наших мастеров 4&nbsp;года</p>
+          <ul class="employees__list employee swiper-wrapper">
+            <li class="employee__card swiper-slide">
+              <picture>
+                <img src="img/employees/ilya-img@1x.jpg" srcset="img/employees/ilya-img@2x.jpg" alt="молодой человек в синей рубашке" width="220" height="220">
+              </picture>
+               <h3>Илья</h3>
+               <p class="employee__card-subtitle"><span>Мастер по ремонту, опыт 5&nbsp;лет.</span> В «Белом Сервисе» с июля 2020</p>
+               <p class="employee__card-progress">Более 4&nbsp;800 выполненных работ</p>
+               <p class="employee__card-msg">Определю любую причину поломки!</p>
+             </li>
+             <li class="employee__card swiper-slide">
+              <picture>
+                <img src="img/employees/ilya-img@1x.jpg" srcset="img/employees/ilya-img@2x.jpg" alt="молодой человек в синей рубашке" width="220" height="220">
+              </picture>
+               <h3>Илья</h3>
+               <p class="employee__card-subtitle"><span>Мастер по ремонту, опыт 5&nbsp;лет.</span> В «Белом Сервисе» с июля 2020</p>
+               <p class="employee__card-progress">Более 4&nbsp;800 выполненных работ</p>
+               <p class="employee__card-msg">Определю любую причину поломки!</p>
+             </li>
+             <li class="employee__card swiper-slide">
+              <picture>
+                <img src="img/employees/ilya-img@1x.jpg" srcset="img/employees/ilya-img@2x.jpg" alt="молодой человек в синей рубашке" width="220" height="220">
+              </picture>
+               <h3>Илья</h3>
+               <p class="employee__card-subtitle"><span>Мастер по ремонту, опыт 5&nbsp;лет.</span> В «Белом Сервисе» с июля 2020</p>
+               <p class="employee__card-progress">Более 4&nbsp;800 выполненных работ</p>
+               <p class="employee__card-msg">Определю любую причину поломки!</p>
+             </li>
+             <li class="employee__card swiper-slide">
+              <picture>
+                <img src="img/employees/ilya-img@1x.jpg" srcset="img/employees/ilya-img@2x.jpg" alt="молодой человек в синей рубашке" width="220" height="220">
+              </picture>
+               <h3>Илья</h3>
+               <p class="employee__card-subtitle"><span>Мастер по ремонту, опыт 5&nbsp;лет.</span> В «Белом Сервисе» с июля 2020</p>
+               <p class="employee__card-progress">Более 4&nbsp;800 выполненных работ</p>
+               <p class="employee__card-msg">Определю любую причину поломки!</p>
+             </li>
+             <li class="employee__card swiper-slide">
+              <picture>
+                <img src="img/employees/ilya-img@1x.jpg" srcset="img/employees/ilya-img@2x.jpg" alt="молодой человек в синей рубашке" width="220" height="220">
+              </picture>
+               <h3>Илья</h3>
+               <p class="employee__card-subtitle"><span>Мастер по ремонту, опыт 5&nbsp;лет.</span> В «Белом Сервисе» с июля 2020</p>
+               <p class="employee__card-progress">Более 4&nbsp;800 выполненных работ</p>
+               <p class="employee__card-msg">Определю любую причину поломки!</p>
+             </li>
+             <li class="employee__card swiper-slide">
+               <picture>
+                 <img src="img/employees/aleksandr-img@1x.jpg" srcset="img/employees/aleksandr-img@2x.jpg" alt="молодой человек в синей рубашке" width="220" height="220">
+               </picture>
+                <h3>Александр</h3>
+                <p class="employee__card-subtitle"><span>Мастер по&nbsp;ремонту, опыт 4,5&nbsp;года.</span>  В&nbsp;&laquo;Белом Сервисе&raquo; с&nbsp;августа 2020</p>
+                <p class="employee__card-progress">Более 5&nbsp;200 выполненных работ</p>
+                <p class="employee__card-msg">Верну к&nbsp;жизни, как самые первые модели, так и&nbsp;новинки смартфонов.</p>
+              </li>
+              <li class="employee__card swiper-slide">
+               <picture>
+                 <img src="img/employees/andrey-img@1x.jpg" srcset="img/employees/andrey-img@2x.jpg" alt="молодой человек в синей рубашке" width="220" height="220">
+               </picture>
+                <h3>Андрей</h3>
+                <p class="employee__card-subtitle">Мастер по&nbsp;ремонту и&nbsp;переклейке дисплеев, опыт 5&nbsp;лет. В&nbsp;&laquo;Белом Сервисе&raquo; с&nbsp;сентября 2020</p>
+                <p class="employee__card-progress">Более 4&nbsp;800 выполненных работ</p>
+                <p class="employee__card-msg">Ремонт Apple&nbsp;&mdash; мой конек!</p>
+              </li>
+              <li class="employee__card swiper-slide">
+               <picture>
+                 <img src="img/employees/dima-img@1x.jpg" srcset="img/employees/dima-img@2x.jpg" alt="молодой человек в синей рубашке" width="220" height="220">
+               </picture>
+                <h3>Дмитрий</h3>
+                <p class="employee__card-subtitle"><span>Мастер по&nbsp;ремонту, опыт 9&nbsp;лет.</span> В &laquo;Белом Сервисе&raquo; с&nbsp;марта 2020</p>
+                <p class="employee__card-progress">Более 4&nbsp;800 выполненных работ</p>
+                <p class="employee__card-msg">Мы&nbsp;даем гарантию и&nbsp;исполняем&nbsp;ее. На&nbsp;технику&nbsp;&mdash; это всегда год.</p>
+              </li>
+          </ul>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <ul class="employees__pagination pagination swiper-pagination">
+           <li class="pagination__item pagination__item--current "><button type="button"></button></li>
+           <li class="pagination__item"><button type="button"></button></li>
+         </ul>
+      </div>
+    </section>
+    <section class="service container">
+      <ul class="service__wrapper">
+        <li class="service__item service__item--info ">
+          <h2 class="service__title">Сервисные центры</h2>
+          <p class="service__lead">
+            Первый сервисный центр Белый Сервис распахнул свои двери 28 марта 2012 года по&nbsp;адресу&nbsp;г. Челябинск, ул. Энгельса&nbsp;75.
+          </p>
+          <p class="service__text">На&nbsp;текущий момент &laquo;Белый Сервис&raquo; имеет три филиала со&nbsp;своими приемщиками и&nbsp;мастерами. Гибко распределяем рабочую нагрузку: если персонал на&nbsp;одной из&nbsp;точек перегружен заказами, то&nbsp;часть работ передается их&nbsp;менее загруженным коллегам из&nbsp;другого филиала.</p>
+          <a class="service__button" href="#">Показать адреса</a>
+        </li>
+        <li class="service__item">
+          <picture>
+            <img src="img/service/service-center1@1x.jpg" srcset="img/service/service-center1@2x.jpg 2x" width="745" height="478" alt="фотография офиса Белый сервис по адресу">
+          </picture>
+        </li>
+        <li class="service__item">
+          <picture>
+            <img src="img/service/service-center2@1x.jpg" srcset="img/service/service-center2@2x.jpg 2x" width="745" height="478" alt="фотография офиса Белый сервис по адресу">
+          </picture>
+        </li>
+        <li class="service__item">
+          <picture>
+            <img src="img/service/service-center3@1x.jpg" srcset="img/service/service-center3@2x.jpg 2x" width="745" height="478" alt="фотография офиса Белый сервис по адресу">
+          </picture>
+        </li>
+      </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.min.js" type="module"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

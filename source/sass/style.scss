@@ -1,0 +1,23 @@
+// Global
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+@import "global/mixin";
+@import "global/visually-hidden";
+
+// Blocks
+@import "blocks/container";
+@import "blocks/page";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/main-nav";
+@import "blocks/button";
+@import "blocks/top-nav";
+@import "blocks/phone";
+@import "blocks/hero";
+@import "blocks/benefits";
+@import "blocks/employees";
+@import "blocks/employee";
+@import "blocks/service";
+@import "blocks/stats";
+@import "blocks/pagination";
