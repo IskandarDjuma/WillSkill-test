@@ -1,0 +1,28 @@
+.basket__wrap {
+  position: relative;
+  margin-right: 25px;
+}
+
+.basket__link {
+  svg {
+    color: $basic-white;
+  }
+  svg:hover {
+    color: $accent-color;
+  }
+  svg:focus {
+    opacity: 0.5;
+  }
+}
+
+.basket__count {
+  @include font-size(0.75em, 1.5em, 400);
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 0;
+  background-color: $accent-color;
+  border-radius: 50%;
+  text-align: center;
+}

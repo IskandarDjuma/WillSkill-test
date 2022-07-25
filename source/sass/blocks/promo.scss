@@ -1,0 +1,162 @@
+.promo {
+  background-color: $basic-black;
+}
+
+.promo__wrapper {
+  position: relative;
+  z-index: 4;
+}
+
+.promo__headline {
+  @include font-size (3em, 1.3em, 700);
+  text-transform: uppercase;
+  color: $basic-white;
+  margin: 0 auto;
+  padding-top: 110px;
+  text-align: center;
+  width: 75%;
+  padding-bottom: 85px;
+
+  span {
+    color: $accent-color;
+  }
+
+  @include below ($tablet-width) {
+    @include font-size (2em, 1.3em, 700);
+    padding-bottom: 45px;
+  }
+}
+
+.promo__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+
+  @include below ($tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+.promo__item {
+  figure {
+    margin: 0 auto;
+    max-width: 80%;
+    padding-top: 85px;
+    padding-bottom: 45px;
+  }
+
+  figcaption {
+    @include font-size (1.12em, 1.5em, 400);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: $basic-white;
+    padding-top: 70px;
+
+    span {
+      color: $accent-color;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  @include below ($tablet-width) {
+    figure {
+      padding-top: 30px;
+      max-width: 100%;
+    }
+
+    figcaption {
+      padding-top: 30px;
+    }
+  }
+}
+
+.promo__old-price {
+  @include font-size (2.25em, 1em, 400);
+  color: $basic-grey;
+  text-decoration: line-through;
+
+  @include below ($mobile-width) {
+    @include font-size (1.25em, 1em, 400);
+  }
+}
+
+.promo__new-price {
+  @include font-size (3em, 1em, 400);
+  color: $basic-white;
+
+  @include below ($mobile-width) {
+    @include font-size (2em, 1em, 400);
+  }
+}
+
+.promo__title {
+  @include font-size (2.25em, 1.5em, 400);
+  color: $basic-white;
+  text-align: center;
+
+  @include below ($tablet-width) {
+    @include font-size (2em, 1em, 400);
+  }
+
+  @include below ($mobile-width) {
+    @include font-size (1.5em, 1em, 400);
+  }
+}
+
+.promo__subtitle {
+  @include font-size (1.5em, 1.5em, 400);
+  color: $accent-color;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+.promo__button {
+  @include font-size (1.12em, 1.5em, 400);
+  padding: 1em 3em;
+  color: $basic-black;
+  background-color: $accent-color;
+  border-radius: 0.4em;
+  margin-bottom: 112px;
+
+  &:hover {
+    background-color: lighten($accent-color, $amount: 4);
+  }
+
+  &:focus {
+    background-color: darken($accent-color, $amount: 4);
+  }
+}
+
+.promo__item--cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include below ($tablet-width) {
+    order: 2;
+  }
+}
+
+.promo__prices {
+  display: flex;
+  justify-content: space-between;
+  width: 44%;
+  margin-bottom: 46px;
+}
+
+.promo__img {
+  max-width: 80%;
+  margin-bottom: 30px;
+}
+
+

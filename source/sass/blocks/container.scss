@@ -1,15 +1,10 @@
 .container {
-  min-width: 1366px;
-  max-width: 1920px;
+  min-width: 1024px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 200px;
+  padding: 0 174px;
 
-  @include below($desktop-width) {
-    min-width: 1366px;
-    padding: 0 145px;
-  }
-
-  @include below($tablet-width) {
+ @include below($tablet-width) {
     min-width: 768px;
     padding: 0 45px;
   }
